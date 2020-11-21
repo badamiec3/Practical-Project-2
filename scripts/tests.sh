@@ -1,6 +1,6 @@
 #! /bin/bash
 
-ssh -i /home/jenkins/.ssh/id_rsa ubuntu@10.0.1.18 << EOF
+ssh -i /home/jenkins/.ssh/id_rsa ubuntu@${TESTVM_IP} << EOF
 
 cd /home/ubuntu/
 
