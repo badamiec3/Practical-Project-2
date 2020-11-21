@@ -4,6 +4,8 @@ pipeline {
       DOCKER_USER=credentials('DOCKER_USER')
       DOCKER_PASSWORD=credentials('DOCKER_PASSWORD')
       TESTVM_IP=credentials('TESTVM_IP')
+      ${DATABASE_URI}
+      ${TEST_DATABASE_URI}
   }
   stages {
       stage('get repo') {
