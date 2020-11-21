@@ -1,6 +1,6 @@
 #! /bin/bash
 
-ssh -i /home/ubuntu/.ssh/id_rsa ubuntu@${TESTVM_IP}
+ssh -i /home/ubuntu/.ssh/id_rsa ubuntu@10-0-1-18
 
 echo "TEST START"
 
