@@ -8,4 +8,8 @@ touch file
 
 echo "TEST END"
 
+exit
+
+
+
 
