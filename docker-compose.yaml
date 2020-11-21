@@ -1,7 +1,8 @@
 version: "3.7"
 services:
   frontend:
-    image: badamiec3/frontend:latest
+    build: ./frontend
+    image: frontend:latest
     container_name: frontend
     ports:
     - target: 5000
@@ -9,7 +10,8 @@ services:
       protocol: tcp
 
   backend:
-    image: badamiec3/backend:latest 
+    build: ./backend:latest
+    image: backend:latest 
     container_name: backend
     ports:
     - target: 5001
