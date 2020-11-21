@@ -28,5 +28,11 @@ pipeline {
           sh './scripts/docker-push-backend.sh'
         }
       }
+     stage('run tests') {
+        steps {
+            sh 'chmod a+x ./scripts/tests.sh'
+            sh './scripts/tests.sh'
+        }
+      }
    }
 }
