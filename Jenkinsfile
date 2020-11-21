@@ -3,6 +3,7 @@ pipeline {
   environment{
       DOCKER_USER=credentials('DOCKER_USER')
       DOCKER_PASSWORD=credentials('DOCKER_PASSWORD')
+      TESTVM_IP=credentials('TESTVM_IP')
   }
   stages {
       stage('get repo') {
