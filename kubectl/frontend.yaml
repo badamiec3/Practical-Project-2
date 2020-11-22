@@ -9,11 +9,11 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: frontend-app
+      app: frontend
   template:
     metadata:
       labels:
-        app: frontend-app
+        app: frontend
     spec:
       containers:
       - name: frontend-app
