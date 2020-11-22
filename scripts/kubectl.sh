@@ -1,3 +1,3 @@
-cd /home/jenkins
+pwd
 
 
