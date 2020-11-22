@@ -18,7 +18,7 @@ docker exec frontend bash -c "pytest tests/ --cov application" | grep passed >> 
 
 cat txt
 
-some_var=$(cat txt | grep passed )
+
 
 docker exec backend bash -c "pytest tests/ --cov application"  | grep FAILURES
 
