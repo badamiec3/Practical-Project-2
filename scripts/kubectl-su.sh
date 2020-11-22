@@ -1,9 +1,11 @@
-           sh 'pwd'
-           sh 'aws configure set aws_access_key_id ${AWS_ACCESS_KEY}'
-           sh 'aws configure set aws_secret_access_key ${AWS_SECRET_KEY}'
-           sh 'sudo su ubuntu'
-           sh 'whoami'
-           sh 'aws configure set aws_access_key_id ${AWS_ACCESS_KEY}'
-           sh 'aws configure set aws_secret_access_key ${AWS_SECRET_KEY}'
-           sh 'sudo su jenkins' 
-           sh 'whoami'
+#! /bin/bash
+
+pwd
+aws configure set aws_access_key_id ${AWS_ACCESS_KEY}
+aws configure set aws_secret_access_key ${AWS_SECRET_KEY}
+sudo su ubuntu'
+whoami'
+aws configure set aws_access_key_id ${AWS_ACCESS_KEY}
+aws configure set aws_secret_access_key ${AWS_SECRET_KEY}
+sudo su jenkins
+whoami
