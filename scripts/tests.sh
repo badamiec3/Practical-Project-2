@@ -12,6 +12,8 @@ cd /home/ubuntu/Jenkins-Repo-Practical-Project
 
 docker-compose up -d
 
+docker exec backend bash -c "DATABASE_URI='ubhn'"
+
 docker exec frontend bash -c "pytest tests/ --cov application | grep passed"
 
 docker exec backend bash -c "pytest tests/ --cov application | grep passed"
