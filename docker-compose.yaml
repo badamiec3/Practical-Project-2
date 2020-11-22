@@ -10,7 +10,7 @@ services:
       protocol: tcp
 
   backend:
-    build: ./backend:latest
+    build: ./backend
     image: backend:latest 
     container_name: backend
     ports:
