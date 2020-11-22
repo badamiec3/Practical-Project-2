@@ -10,7 +10,7 @@ git clone https://github.com/badamiec3/Jenkins-Repo-Practical-Project.git
 
 cd /home/ubuntu/Jenkins-Repo-Practical-Project
 
-touch file
+docker-compose up -d 
 
 echo "TEST END"
 
