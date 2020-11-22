@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: badamiec3/triotask:1.0
+        image: badamiec3/backend:latest
         env:
         - name: DATABASE_URI
           valueFrom:
