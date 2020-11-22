@@ -22,7 +22,7 @@ pipeline {
     stage('run frontend tests') {
         steps {
             sh 'chmod a+x ./scripts/ftests.sh'
-            sh './fscripts/tests.sh'
+            sh './scripts/ftests.sh'
         }
       }
     stage('run backend tests') {
