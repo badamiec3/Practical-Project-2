@@ -14,8 +14,6 @@ docker-compose up -d
 
 docker exec frontend bash -c "pytest tests/ --cov application" | grep passed
 
-docker exec backend bash -c "pytest tests/ --cov application"  | grep passed
-
 EOF
 
 
