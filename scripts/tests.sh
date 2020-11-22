@@ -10,7 +10,11 @@ git clone https://github.com/badamiec3/Jenkins-Repo-Practical-Project.git
 
 cd /home/ubuntu/Jenkins-Repo-Practical-Project
 
-docker-compose up -d 
+docker-compose up -d
+
+docker exec backend bash -c "pytest tests/ --cov application"
+
+docker exec frontend bash -c "pytest tests/ --cov application"
 
 echo "TEST END"
 
