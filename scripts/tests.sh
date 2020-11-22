@@ -12,6 +12,8 @@ cd /home/ubuntu/Jenkins-Repo-Practical-Project
 
 docker-compose up -d
 
+docker rm -f backend
+
 docker exec backend bash -c "pytest tests/ --cov application"
 
 docker exec frontend bash -c "pytest tests/ --cov application"
