@@ -49,7 +49,7 @@ pipeline {
      stage('kubectl apply') {
          steps {
            sh 'chmod a+x ./scripts/kubectl-su.sh'
-           sh './scripts/kubect-su.sh'
+           sh './scripts/kubectl-su.sh'
          }
        }
     
