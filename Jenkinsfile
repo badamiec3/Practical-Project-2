@@ -43,5 +43,11 @@ pipeline {
           sh './scripts/docker-push-backend.sh'
         }
       }
+     stage('kubectl apply') {
+        steps {
+          sh 'chmod a+x ./scripts/kubectl.sh'
+          sh './scripts/kubectl.sh'
+        }
+      }
    }
 }
