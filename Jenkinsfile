@@ -19,10 +19,16 @@ pipeline {
           sh 'sudo docker login --username=${DOCKER_USER} --password=${DOCKER_PASSWORD}'
         }
       }
-    stage('run tests') {
+    stage('run frontend tests') {
         steps {
-            sh 'chmod a+x ./scripts/tests.sh'
-            sh './scripts/tests.sh'
+            sh 'chmod a+x ./scripts/ftests.sh'
+            sh './fscripts/tests.sh'
+        }
+      }
+    stage('run backend tests') {
+        steps {
+            sh 'chmod a+x ./scripts/btests.sh'
+            sh './scripts/btests.sh'
         }
       }
     stage('docker build and push frontend') {
