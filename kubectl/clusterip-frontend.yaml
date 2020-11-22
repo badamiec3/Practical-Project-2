@@ -4,10 +4,10 @@ metadata:
   name: frontend
   namespace: project
   labels:
-    app: frontend-app
+    app: frontend
 spec:
   selector:
-    app: frontend-app
+    app: frontend
   ports:
   - protocol: TCP
     port: 5000
