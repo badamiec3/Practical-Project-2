@@ -54,7 +54,7 @@ pipeline {
          }
        }
     
-     stage('kubectl apply') {
+     stage('kubectl') {
         steps {
           sh 'chmod a+x ./scripts/kubectl.sh'
           sh './scripts/kubectl.sh'
