@@ -18,6 +18,7 @@ spec:
       containers:
       - name: backend
         image: badamiec3/backend:latest
+        imagePullPolicy: "Always"
         env:
         - name: DATABASE_URI
           valueFrom:
